@@ -48,7 +48,7 @@ def mark_points_to_hit():
 	for x, y in points:
 		graph[x - 1][y - 1] = 1
 
-# marks 2 graph for every point in polygon
+# marks 2 in graph for every point in polygon
 def mark_poly():
 	global n
 	for i in range(len(polys)):
@@ -273,7 +273,7 @@ class Graph:
 
 		return steps
 
-	# recursive funstion to help find all paths from source to destination
+	# recursive function to help find all paths from source to destination
 	# visited keeps track of vertices in current path
 	# path stores actual vertices and path_index is current index in path
 	def find_all_paths_util(self, u, d, visited, path):
